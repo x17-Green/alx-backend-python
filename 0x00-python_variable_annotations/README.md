@@ -44,9 +44,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 
 ## Tasks, Files & Description
-### [x] 0. Basic annotations - add
+### 0. Basic annotations - add
 - File: [`0-add.py`](./0-add.py "0-add.py")
-- Task: Write a type-annotated function `add`
+- [x] Task: Write a type-annotated function `add`
 	- Takes two float arguments
 		- `a`: (Float)
 		- `b`: (Float)
@@ -69,9 +69,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 1. Basic annotations - concat
+### 1. Basic annotations - concat
 - File: [`1-concat.py`](./1-concat.py "1-concat.py")
-- Task: Write a type-annotated function `concat`
+- [x] Task: Write a type-annotated function `concat`
 	- Takes two float arguments
 		- `str1`: (String)
 		- `str2`: (String)
@@ -98,9 +98,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 2. Basic annotations - floor
+### 2. Basic annotations - floor
 - File: [`2-floor.py`](./2-floor.py "2-floor.py")
-- Task: Write a type-annotated function `floor`
+- [x] Task: Write a type-annotated function `floor`
 	- Takes a float argument
 		- `n`: (Float)
     - Returns:
@@ -130,9 +130,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 3. Basic annotations - to string 
+### 3. Basic annotations - to string 
 - File: [`3-to_str.py`](./3-to_str.py "3-to_str.py")
-- Task: Write a type-annotated function `to_str`
+- [x] Task: Write a type-annotated function `to_str`
     - Takes a float argument
       - `n`: (Float)
     - Returns:
@@ -158,9 +158,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 4. Define variables 
+### 4. Define variables 
 - File: [`4-define_variables.py`](./4-define_variables.py "4-define_variables.py")
-- Task: Define the following variables with the specified values and type
+- [x] Task: Define the following variables with the specified values and type
     - `a`: (Int) = 1
     - `pi`: (Float) = 3.14
     - `i_understand_annotations`: (Boolean) = True
@@ -191,9 +191,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 5. Complex types - list of floats 
+### 5. Complex types - list of floats 
 - File: [`5-sum_list.py`](./5-sum_list.py "5-sum_list.py")
-- Task: Define a type-annotated function `sum_list` 
+- [x] Task: Define a type-annotated function `sum_list` 
     - Takes a list of floats as argument
         - `input_list`: (`list`: Float)
     - Returns:
@@ -221,9 +221,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 6. Complex types - mixed list 
+### 6. Complex types - mixed list 
 - File: [`6-sum_mixed_list.py`](./6-sum_mixed_list.py "6-sum_mixed_list.py")
-- Task: Define a type-annotated function `sum_mixed_list`
+- [x] Task: Define a type-annotated function `sum_mixed_list`
     - Takes a list of mixed types as argument
         - `sum_mixed_list`: (List: `int`, `float`)
 - Example Execution: ([`6-main.py`](./6-main.py "6-main.py"))
@@ -244,9 +244,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 	╰─➤  
 	```
 
-### [x] 7. Complex types - string and int/float to tuple 
+### 7. Complex types - string and int/float to tuple 
 - File: [`7-to_kv.py`](./7-to_kv.py "7-to_kv.py")
-- Task: Define a type-annotated function named `to_kv` 
+- [x] Task: Define a type-annotated function named `to_kv` 
 	- Prototype: `to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]`
 	- Function takes two arguments:
 	    - `k`: a string (`str`)
@@ -275,9 +275,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 	╰─➤  
 	```
 
-### [x] 8. Complex types - functions 
+### 8. Complex types - functions 
 - File: [`8-is_kind_of_class.py`](./8-is_kind_of_class.py "8-is_kind_of_class.py")
-- Task: Define a type-annotated function named `make_multiplier`
+- [x] Task: Define a type-annotated function named `make_multiplier`
     - Prototype: `make_multiplier(multiplier: float) -> callable[[float], float]
     - Function takes one argument:
 		- `multiplier`:  (Float)
@@ -303,9 +303,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 9. Let's duck type an iterable object 
+### 9. Let's duck type an iterable object 
 - File: [`9-element_length.py`](./9-element_length.py "9-element_length.py")
-- Task: Annotate the function `element_length` with the correct types for its parameters and return values.
+- [x] Task: Annotate the function `element_length` with the correct types for its parameters and return values.
 	- The function takes one argument:
 	    - `lst`: a list of strings (or other sequences) (`list[str]`)
 	- The function returns a list of tuples, where each tuple contains:
@@ -333,9 +333,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 10. Duck typing - first element of a sequence 
+### 10. Duck typing - first element of a sequence 
 - File: [`100-safe_first_element.py`](./100-safe_first_element.py "100-safe_first_element.py")
-- Task: Augment the following code with the correct duck-typed annotations:
+- [x] Task: Augment the following code with the correct duck-typed annotations:
     ```
     # The types of the elements of the input are not know
     def safe_first_element(lst):
@@ -362,9 +362,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 11. More involved type annotations 
+### 11. More involved type annotations 
 - File: [`101-safely_get_value.py`](./101-safely_get_value.py "101-safely_get_value")
-- Task: Add type annotations to the function using the `TypeVar` type from the `typing` module.
+- [x] Task: Add type annotations to the function using the `TypeVar` type from the `typing` module.
 	```
 	def safely_get_value(dct, key, default = None):
 	    if key in dct:
@@ -397,9 +397,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
     ╰─➤  
     ```
 
-### [x] 12. Type Checking 
+### 12. Type Checking 
 - File: [`102-type_checking.py`](./102-type_checking.py "102-type_checking.py")
-- Task: Use `mypy` to validate the given piece of code:
+- [x] Task: Use `mypy` to validate the given piece of code:
     ```
     def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
         zoomed_in: Tuple = [
