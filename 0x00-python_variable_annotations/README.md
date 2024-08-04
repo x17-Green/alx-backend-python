@@ -45,3 +45,11 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 ## Tasks, Files & Description
 ### 0. Basic annotations - add
+- File: [`0-add.py`](./0-add.py "0-add.py")
+- Task: Write a type-annotated function `add`
+	- Takes two float arguments
+		- `a`: (Float)
+		- `b`: (Float)
+	- Returns:
+		- `sum`: (Float)
+- Example Execution: ([`0-main.py`](./0-main.py "0-main.py"))
