@@ -3,7 +3,7 @@
 '''
 
 
-def floor(a: float) -> int:
+def floor(n: float) -> int:
     '''Computes the floor of a floating-point number.
     '''
-    return int(a)
+    return int(n)
