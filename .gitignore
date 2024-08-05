@@ -8,6 +8,7 @@ Desktop.ini
 
 # Python files
 __pycache__/
+.mypy_cache
 # *.pyc
 *.pyo
 
