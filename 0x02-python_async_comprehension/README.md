@@ -1,5 +1,4 @@
 # 0x02. Python - Async Comprehension
-=====================================
 ### Project Description
 This project is about asynchronous comprehensions in Python. It involves creating a program that uses asynchronous comprehensions to fetch data from a URL and then process the data.
 
@@ -38,3 +37,95 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - All your functions and coroutines must be type-annotated.
 
 ### Tasks, Files & Description
+### 0. Async Generator
+- File: [`0-async_generator.py`](./0-async_generator.py "0-async_generator.py")
+- [x] Task: Implement the `async_generator` coroutine with the following specifications:
+	- Takes no arguments
+	- Loops 10 times, performing the following actions on each iteration:
+	    - Asynchronously waits for 1 second
+	    - Yields a random number between 0 and 10 (inclusive) using the `random` module
+- Example Execution: ([`0-main.py`](./0-main.py "0-main.py"))
+    ```
+    ╭─green@greenhouse 
+    ╰─➤  cat 0-main.py 
+    #!/usr/bin/env python3
+
+    import asyncio
+
+    async_generator = __import__('0-async_generator').async_generator
+
+    async def print_yielded_values():
+        result = []
+        async for i in async_generator():
+            result.append(i)
+        print(result)
+
+    asyncio.run(print_yielded_values())
+    ╭─green@greenhouse 
+    ╰─➤  ./0-main.py
+    [2.018700910474718, 4.775486313111395, 1.6940470664422136, 8.953690480774315, 6.013884069585254, 7.8502592240651055, 6.534399779687323, 4.485440533373559, 8.290247687262838, 0.3515917957562431]
+    ╭─green@greenhouse 
+    ╰─➤  
+    ```
+
+### 1. Async Comprehensions
+- File: [`1-async_comprehension.py`](./1-async_comprehension.py "1-async_comprehension.py")
+- [x] Task: Implement the `async_comprehension` coroutine with the following specifications:
+	- Imports and utilizes the `async_generator` coroutine from the previous task
+	- Takes no arguments
+	- Uses an asynchronous comprehension to collect 10 random numbers from `async_generator`
+	- Returns the list of 10 collected random numbers
+- Example Implementation: ([`1-main.py`](./1-main.py "1-main.py"))
+    ```
+    ╭─green@greenhouse 
+    ╰─➤  cat 1-main.py
+    #!/usr/bin/env python3
+
+    import asyncio
+
+    async_comprehension = __import__('1-async_comprehension').async_comprehension
+
+
+    async def main():
+        print(await async_comprehension())
+
+    asyncio.run(main())
+
+    ╭─green@greenhouse 
+    ╰─➤  ./1-main.py 
+    [8.931384904902714, 2.2045355903843946, 2.8114379414544977, 0.744205703591414, 5.963635733816121, 2.704494981402167, 4.0001991033891695, 6.986255803168482, 1.603244979009929, 1.1699399575980274]
+    ╭─green@greenhouse 
+    ╰─➤  
+    ```
+
+### 2. Run time for four parallel comprehensions
+- File: [`2-measure_runtime.py`](./2-measure_runtime.py "2-measure_runtime.py")
+- [x] Task: Implement the `measure_runtime` coroutine with the following specifications:
+    - Import and utilize the `async_comprehension` coroutine from the previous file
+    - Execute `async_comprehension` four times in parallel using `asyncio.gather`
+    - Measure and return the total runtime of the parallel execution
+- Example Execution: ([`2-main.py`](./2-main.py "2-main.py"))
+    ```
+    ╭─green@greenhouse 
+    ╰─➤  cat 2-main.py
+    #!/usr/bin/env python3
+
+    import asyncio
+
+
+    measure_runtime = __import__('2-measure_runtime').measure_runtime
+
+
+    async def main():
+        return await(measure_runtime())
+
+    print(
+        asyncio.run(main())
+    )
+
+    ╭─green@greenhouse 
+    ╰─➤  ./2-main.py
+    10.011858224868774
+    ╭─green@greenhouse 
+    ╰─➤  
+    ```
